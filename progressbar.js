@@ -77,16 +77,15 @@ function SetFading(opacity){
 }
 
 // UNCOMMENT THIS BRANCH IN PRODUCTION - this originally starts animation when scrolled to the animation container
-/*if($(document.body).hasClass('kezdolap')){
+/*if($(document.body).hasClass('PAGE_CLASS_NAME')){ // REPLACE 'PAGE_CLASS_NAME' WITH A CLASS NAME OF THE APGE THE ANIMATION SHOULD START ON
     $(window).scroll(function() {
     var hT = $('#train-container').offset().top,
         hH = $('#train-container').outerHeight(),
         wH = $(window).height(),
         wS = $(this).scrollTop();
         
-    if ((wS > (hT+hH-wH)) && trainAnimCanStart){
+    if ((wS > (hT+hH-wH)) && trainAnimCanStart)
         RunProgressBar();
-    }
  });
 }*/
 
@@ -95,6 +94,4 @@ function SetFading(opacity){
     RunProgressBar();
 })();
 
-
-
-
+/*By @retirem - 16.06.2022.*/
